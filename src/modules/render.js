@@ -1,6 +1,7 @@
 export default function render(data) {
     //// Current weather render ////
     const currentWeatherContainer = document.getElementById('current-weather');
+    currentWeatherContainer.replaceChildren();
 
     const locationName = document.createElement('div');
     locationName.textContent = data.location.name;
@@ -20,6 +21,7 @@ export default function render(data) {
     
     //// Forecast weather render ////
     const forecastWeatherContainer = document.getElementById('forecast-weather');
+    forecastWeatherContainer.replaceChildren();
 
     const nextDaysWeather = document.createElement('div');
 

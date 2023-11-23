@@ -1,0 +1,20 @@
+:root {
+    --text-color-light: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/background-weather.jpg);
+    color: var(--text-color-light);
+}
