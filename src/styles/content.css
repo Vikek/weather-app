@@ -1,0 +1,31 @@
+#content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#location-name {
+    font-size: 2.5rem;
+}
+
+#current-condition {
+    font-size: 1.5rem;
+}
+
+#current-condition-icon {
+    width: 10vw;
+}
+
+#current-temp-celsius {
+    font-size: 3rem;
+}

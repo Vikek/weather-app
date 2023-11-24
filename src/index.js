@@ -3,6 +3,7 @@ import render from "./modules/render";
 
 import "./styles/global.css";
 import "./styles/header.css";
+import "./styles/content.css";
 
 let searchBar = document.getElementById('search-bar');
 
