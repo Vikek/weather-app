@@ -1,7 +1,7 @@
 #content {
     height: 100%;
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
     justify-content: center;
     align-items: center;
     font-weight: 600;
@@ -14,6 +14,11 @@
     gap: 1vh;
 }
 
+#current-weather > .row {
+    display: flex;
+    gap: 3vw;
+}
+
 #location-name {
     font-size: 2.5rem;
 }
@@ -23,9 +28,35 @@
 }
 
 #current-condition-icon {
-    width: 10vw;
+    width: 64px;
 }
 
 #current-temp-celsius {
     font-size: 3rem;
+    align-self: center;
+}
+
+#forecast-weather {
+    display: flex;
+    gap: 2vw;
+}
+
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#forecast-weather .forecast-row {
+    display: flex;
+    gap: 1vw;
+}
+
+#forecast-weather .forecast-temp {
+    font-size: 2rem;
+    align-self: center;
+}
+
+#forecast-weather .forecast-condition {
+    font-size: 1.2rem;
 }
