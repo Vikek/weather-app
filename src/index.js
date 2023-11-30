@@ -14,6 +14,10 @@ getWeatherData('auto:ip').then((data) => {
 
 searchBar.addEventListener('change', () => {
     getWeatherData(searchBar.value).then((data) => {
+        if (data.error) {
+            alert('invalid location');
+            return console.error('invalid location');
+        }
         console.log(data);
         render(data);
     });

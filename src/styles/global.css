@@ -10,12 +10,27 @@
 
 body, html {
     height: 100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 body {
     display: grid;
     grid-template-rows: 1fr 10fr;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/background-weather.jpg);
+    background-size: cover;
     color: var(--text-color-light);
+}
+
+@media screen and (max-width: 600px) {
+    body, html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body, html {
+        font-size: 10px;
+    }
 }
